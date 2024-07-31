@@ -203,7 +203,7 @@ header {
   display: flex;
 }
 
-#promoPizzas {
+#PromoPizzas {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -211,4 +211,25 @@ header {
   justify-content: center;
   gap: 10px;
   padding-top: 20px;
+}
+#Delivery {
+  max-height: 270px;
+  background: #ebe7Db;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-align: center;
+}
+
+#Delivery h1 {
+  text-transform: uppercase;
+  color: #d01818;
+  font-weight: 900;
+}
+
+#Delivery .sec-menu {
+  justify-content: center;
+  padding: 40px;
 }
