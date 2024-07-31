@@ -233,3 +233,14 @@ header {
   justify-content: center;
   padding: 40px;
 }
+
+#icone {
+  display: flex;
+  justify-content: center;
+  gap: 70;
+}
+
+.itens {
+  max-width: 250px;
+  text-align: center;
+}
