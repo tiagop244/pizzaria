@@ -13,7 +13,7 @@ body {
 }
 
 .bgfundo {
-  background: url(https://placehold.co/1920x1080) no-repeat center/cover;
+  background: url(/img/banner.jpg) no-repeat center/cover;
   /* 
        background-color: blue;
        background-image: url(https://placehold.co/1920x1080); 
@@ -51,7 +51,6 @@ header {
     rgba(0, 0, 0, 0.8) 60%,
     rgba(0, 0, 0, 0) 100%
   );
-  padding: 24px 0;
 }
 
 .container {
@@ -102,7 +101,7 @@ header {
 }
 
 #btnZap {
-  background: #e7a200;
+  background: #ff0000;
   border-radius: 65px;
   padding: 0px 15px;
   font-size: 20px;
@@ -120,13 +119,11 @@ header {
 }
 
 .iFood {
-  z-index: 10;
   position: fixed;
   right: 0;
   top: 200px;
-  box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  filter: drop-shadow(-2px 4px 6px black);
 }
 
 #BoasVindas {
@@ -134,7 +131,7 @@ header {
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 15px;
-  background: #f6f6f6f6;
+  background: #f6f6f6;
 }
 
 #BoasVindas img {
@@ -157,7 +154,7 @@ header {
 #TextoBoasVindas h3 {
   text-transform: uppercase;
   font-weight: 900;
-  color: #e7a200;
+  color: #ff0000;
   font-size: 23px;
   margin-top: 20px;
   margin-bottom: 0;
@@ -167,40 +164,35 @@ header {
   margin-bottom: 0;
 }
 
-#cardapio {
+#Cardapio {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#cardapio img {
+#Cardapio img {
   padding: 36px 0;
 }
 
-#cardapio div img {
+#Cardapio div img {
   padding: 0;
 }
 
-#cardapio h2 {
-  color: #d01818;
+#Cardapio h2 {
+  color: #d03012;
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 900;
   margin: 0 0 7px 0;
 }
 
-.btncardapio {
+.btnCardapio {
   text-decoration: none;
   color: #fff;
   background: #8daa3e;
   padding: 10px 20px;
   border-radius: 50px;
   border-bottom: 2px solid #6b7552;
-  margin-bottom: 25px;
-}
-
-#cardapio div {
-  display: flex;
 }
 
 #PromoPizzas {
@@ -212,6 +204,7 @@ header {
   gap: 10px;
   padding-top: 20px;
 }
+
 #Delivery {
   max-height: 270px;
   background: #ebe7db;
@@ -225,7 +218,7 @@ header {
 
 #Delivery h1 {
   text-transform: uppercase;
-  color: #d01818;
+  color: #bf0a26;
   font-weight: 900;
 }
 
@@ -234,41 +227,43 @@ header {
   padding: 40px;
 }
 
-#icone {
+#Icone {
   display: flex;
   justify-content: center;
-  gap: 70;
+  gap: 70px;
+  margin: 20px 0;
 }
 
 .itens {
   max-width: 250px;
   text-align: center;
 }
-#contato iframe{
-position: absolute;
-z-index: -10;
+
+#Contato iframe {
+  position: absolute;
 }
-#contato{
+
+#Contato {
   display: flex;
   justify-content: center;
 }
 
 .forms {
   z-index: 2;
-  width: 530;
+  width: 530px;
   max-width: 100%;
-  box-shadow: 0 0 6px #000000;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   display: block;
   background: #fff;
   padding: 48px 22px;
   text-align: center;
   text-transform: uppercase;
 }
-
 .forms h2 {
-  color: #e7a200;
+  color: #ff0000;
   font-size: 28px;
   line-height: 80px;
+  margin: 0;
 }
 .forms p {
   margin: 0;
@@ -279,6 +274,7 @@ z-index: -10;
   color: #333;
   font-size: 14px;
 }
+
 .forms input,
 .forms textarea {
   padding: 0 16px;
@@ -289,24 +285,27 @@ z-index: -10;
   font-weight: 400;
   font-size: 14px;
   width: 80%;
-margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
 .forms form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.forms imput[type="submit"]{
-  background: #e7a200;
-  border-color: #e7a200;
+
+.forms input[type="submit"] {
+  background: #ff0000;
+  border-color: #615858;
   width: 155px;
   border-radius: 50px;
   color: #fff;
   font-weight: 700;
   margin-top: 20px;
 }
- footer {
-  background: #e7a200;
+
+footer {
+  background: #0c5b14;
   min-height: 400px;
   margin-top: -281px;
   color: #fff;
@@ -315,32 +314,33 @@ margin-bottom: 20px;
   justify-content: space-evenly;
 }
 
-
 footer #dados {
   display: flex;
   margin: 0 14%;
   justify-content: space-between;
 }
 
-
 #dados p,
 #dados h4 {
   margin: 0;
 }
 
-
 #dados h4 {
   margin-top: 10px;
 }
 
-
 footer #dados:first-child {
   margin-left: 20%;
 }
-
 
 #copyright {
   text-align: center;
   margin-top: 100px;
 }
 
+textarea {
+  resize: none;
+}
+#seila {
+  text-align: center;
+}
